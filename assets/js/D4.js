@@ -42,7 +42,7 @@ function crazyDiff(num) {
   }
 }
 
-console.log(crazyDiff(22));
+// console.log(crazyDiff(22));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -68,15 +68,14 @@ function boundary(n) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function epify(str) {
-  const p = "EPICODE";
-  if (str.startsWith(p)) {
+  if (str.toLowerCase().startsWith("epicode")) {
     return str;
   } else {
-    return p + "" + str;
+    return "EPICODE " + str;
   }
 }
 
-console.log(epify(" e un corso!"));
+console.log(epify("e un corso!"));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
