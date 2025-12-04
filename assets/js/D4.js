@@ -18,14 +18,11 @@ function area(l1, l2) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function crazySum(n1, n2) {
+  const sum = n1 + n2;
   if (n1 === n2) {
-    Math.floor(n1, n2);
-    let somma = (n1 + n2) * 3;
-    return somma;
+    return sum * 3;
   } else {
-    Math.floor(n1, n2);
-    let somma = n1 + n2;
-    return somma;
+    return sum;
   }
 }
 
@@ -36,15 +33,16 @@ function crazySum(n1, n2) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function crazyDiff(x) {
-  if (x > 19) {
-    let differenza = Math.abs(x - 19) * 3;
-    return differenza;
+function crazyDiff(num) {
+  const dif = Math.abs(num - 19);
+  if (num > 19) {
+    return dif * 3;
   } else {
-    let differenza = Math.abs(x - 19);
-    return differenza;
+    return dif;
   }
 }
+
+console.log(crazyDiff(22));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
